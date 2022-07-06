@@ -1,0 +1,31 @@
+# This is a basic workflow to help you get started with Actions
+
+name: CI-CD-Pipeline
+env: 
+ EB_S3_BUCKET       : "aplication-bucket"
+ EB_APPLICATION_NAME: "My-app"
+ EB_ENVIROPMENT_NAME: "My-app-env"
+ DEPLOY_PACKEGE_NAME: "app_${{ github.sha}}.zip"
+ AWS_REGION_NAME    : "eu-central-1"
+
+
+on:
+  push:
+    branches: [ "main" ]
+  
+jobs:
+ my_ci_part:
+  
+    runs-on: ubuntu-latest
+   
+    steps:
+    - name: Git clone our repo
+      uses: actions/checkout@v1
+      
+      
+
+     
+    - name: Create ZIP Packege
+      run : zip -r ${{env.DEPLOY_PACKEGE_NAME}}  ./ -x *.git*
+  
+      
