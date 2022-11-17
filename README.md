@@ -1,7 +1,7 @@
 
 
 Status of Last Deployment: <br>
-<img src="https://github.com/Piter1608/workflows/My-GitHubActions/badge.svg?branch=main"><br>
+<img src="https://github.com/Piter1608/workflows/github_actions/badge.svg?branch=main"><br>
 
 <!---
 Piter1608/Piter1608 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
